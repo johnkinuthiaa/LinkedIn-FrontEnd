@@ -18,5 +18,6 @@ const AddToFeed = ({username, image, title, info}) => {
         </div>
     )
 }
+
 export default AddToFeed;
 
