@@ -1,0 +1,16 @@
+.body__container{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    gap:30px
+
+}
+.body_sidebar{
+    flex: 0.2;
+}
+.body__main{
+    flex: 0.6;
+}
+.body__right__sidebar{
+    flex: 0.2;
+}

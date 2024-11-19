@@ -1,0 +1,37 @@
+.personal__information{
+    display: flex;
+    align-items: flex-start;
+
+}
+.personal__information >img{
+    border-radius: 50%;
+    width: 70px;
+    height: 50px;
+}
+.user__info{
+   margin-left: 10px;
+}
+.user__info p{
+    color: gray;
+}
+.follow__button{
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 2px 5px 2px 5px;
+    margin-top: 5px;
+    transition: background-color 1.15ms;
+    font-weight: 900;
+}
+.follow__button:hover{
+    background-color: whitesmoke;
+
+}
+.user__info p{
+    font-size: 15px;
+}
+.user__info>h3{
+    font-size: 15px;
+    font-weight:bolder;
+}

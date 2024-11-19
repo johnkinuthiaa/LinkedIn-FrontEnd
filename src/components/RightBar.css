@@ -1,0 +1,20 @@
+.right__bar__mini_heading{
+    display: flex;
+    justify-content: space-between;
+}
+.right__bar{
+    display: flex;
+    flex-direction: column;
+    line-height: 25px;
+    border-radius: 15px;
+    box-shadow:0 0 4px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    padding: 10px;
+    width: 100%;
+    word-break: break-all;
+}
+.all__recommendations{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
