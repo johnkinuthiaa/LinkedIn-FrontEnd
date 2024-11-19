@@ -14,3 +14,20 @@
 .body__right__sidebar{
     flex: 0.2;
 }
+@media  screen and (max-width: 755px) {
+    .body_sidebar, .body__right__sidebar{
+        display: none;
+    }
+    .body__container{
+        width: 96%;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        gap:2px;
+        margin: 10px;
+    }
+    .body__main>*{
+        width: 100%;
+
+    }
+}

@@ -19,20 +19,33 @@ const Header =()=>{
                     <input type={"search"} placeholder={"search"}/>
 
                 </div>
+                <div className={"mobile__top__navigation"}>
+                    <ChatIcon/>
+                </div>
 
             </div>
             <div className={"header__right"}>
-                <IconsHolder  Icon ={HomeIcon} title={"Home"}/>
-                <IconsHolder  Icon ={SupervisorAccountIcon} title={"My Network"}/>
-                <IconsHolder Icon ={BusinessCenterIcon} title={"Jobs"}/>
-                <IconsHolder  Icon ={ChatIcon} title={"Messaging"}/>
-                <IconsHolder  Icon ={NotificationsIcon} title={"Notifications"}/>
-                <IconsHolder  Icon ={AccountCircleIcon } title={"me"}/>
+                <IconsHolder Icon={HomeIcon} title={"Home"}/>
+                <IconsHolder Icon={SupervisorAccountIcon} title={"My Network"}/>
+                <IconsHolder Icon={BusinessCenterIcon} title={"Jobs"}/>
+                <IconsHolder Icon={ChatIcon} title={"Messaging"}/>
+                <IconsHolder Icon={NotificationsIcon} title={"Notifications"}/>
+                <IconsHolder Icon={AccountCircleIcon} title={"me"}/>
                 <div className={"header__right__menu"}>
                     <IconsHolder Icon={AppsIcon} title={"For Businesses"}/>
                 </div>
             </div>
-
+            <div className={"bottom__navigation"}>
+                <IconsHolder Icon={HomeIcon} title={"Home"}/>
+                <IconsHolder Icon={SupervisorAccountIcon} title={"My Network"}/>
+                <IconsHolder Icon={BusinessCenterIcon} title={"Jobs"}/>
+                <IconsHolder Icon={ChatIcon} title={"Messaging"}/>
+                <IconsHolder Icon={NotificationsIcon} title={"Notifications"}/>
+                <IconsHolder Icon={AccountCircleIcon} title={"me"}/>
+                <div className={"header__right__menu"}>
+                    <IconsHolder Icon={AppsIcon} title={"For Businesses"}/>
+                </div>
+            </div>
         </div>
     )
 }
