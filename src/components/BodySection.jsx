@@ -44,7 +44,7 @@ const BodySection =()=>{
                                    setPostDetails(e.target.value)
                         }}/>
                         <button className={"submit__button"} type={"submit"} onClick={()=>{
-                            sendPostToDb(postDetails)
+                            postDetails>10? sendPostToDb(postDetails):alert("cannot send and empty post")
 
                         }}>post</button>
 
