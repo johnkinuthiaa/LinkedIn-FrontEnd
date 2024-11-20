@@ -25,8 +25,12 @@ const BodySection =()=>{
             },
 
         )
+        if(!response.ok){
+            alert(response.json())
+        }
         const data =await response.json()
         console.log(data)
+        alert(data.message)
     })
 
     return(
@@ -44,7 +48,7 @@ const BodySection =()=>{
                                    setPostDetails(e.target.value)
                         }}/>
                         <button className={"submit__button"} type={"submit"} onClick={()=>{
-                            postDetails>10? sendPostToDb(postDetails):alert("cannot send and empty post")
+                            sendPostToDb(postDetails)
 
                         }}>post</button>
 
