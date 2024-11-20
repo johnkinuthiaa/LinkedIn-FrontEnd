@@ -64,6 +64,7 @@ const BodySection =()=>{
             </div>
             <div className={"posts"}>
                 <Posts />
+                jooooeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
             </div>
 
         </div>
