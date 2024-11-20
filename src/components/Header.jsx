@@ -22,7 +22,6 @@ const Header =()=>{
                 <div className={"mobile__top__navigation"}>
                     <ChatIcon/>
                 </div>
-
             </div>
             <div className={"header__right"}>
                 <IconsHolder Icon={HomeIcon} title={"Home"}/>
