@@ -7,6 +7,7 @@
     align-items: center;
     margin-bottom: 3px;
     background-color: whitesmoke;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.2);
 }
 .bottom__navigation{
     display: none;
@@ -64,13 +65,15 @@ input[type="search"]{
     .header{
         display: flex;
         justify-content: flex-start;
+        align-items: center;
     }
     .header__right{
         display: none;
     }
     .header__left img{
-        height: 20px;
+        height: 30px;
         width: 30px;
+        border-radius: 5px;
     }
     .header__search{
         margin: 0;
