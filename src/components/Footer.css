@@ -1,0 +1,17 @@
+.footer{
+    display: flex;
+    padding: 10px;
+    width: 100%;
+}
+
+.footer div p{
+    margin-top: 5px;
+    color: gray;
+}
+.footer div p:hover{
+    cursor: pointer;
+    color: rgb(0,0,0);
+}
+.footer div{
+    margin: 5px;
+}

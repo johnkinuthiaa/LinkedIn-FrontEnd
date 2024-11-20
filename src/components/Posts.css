@@ -1,0 +1,55 @@
+.posts__section{
+
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+
+}
+.posts__section__profile__info{
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    color: #ffffff;
+
+}
+.posts__section__all_divs{
+    /*border: 2px solid blue;*/
+    margin-bottom:  10px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+
+}
+.posts__section__profile__info img{
+    object-fit: contain;
+    width: 60px;
+    border-radius: 50%;
+    border: 1px solid rgb(219, 211, 211);
+    margin-right: 10px;
+}
+.posts__section__profile__info__details p{
+    font-size: 12px;
+    font-kerning: normal;
+}
+.posts__section__profile__info__details__span{
+    color: rgb(183, 183, 183);
+}
+.posts__section__profile__info__details__p{
+    align-items: center;
+}
+.posts__section__profile__info__follow{
+
+    align-items: center;
+
+}
+.posts__section__profile__info__follow p{
+    color: rgb(61, 59, 243);
+    font-weight: 900;
+}
+.posts__section__actual__content{
+    margin: 10px;
+}
+
+

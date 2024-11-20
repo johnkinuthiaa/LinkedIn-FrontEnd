@@ -1,6 +1,7 @@
 .right__bar__mini_heading{
     display: flex;
     justify-content: space-between;
+
 }
 .right__bar{
     display: flex;
@@ -12,6 +13,7 @@
     padding: 10px;
     width: 100%;
     word-break: break-all;
+    /*position: fixed;*/
 }
 .all__recommendations{
     display: flex;

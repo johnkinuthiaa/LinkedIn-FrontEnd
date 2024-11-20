@@ -2,7 +2,9 @@
 import "./AddToFeed.css"
 import AddIcon from "@mui/icons-material/Add";
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import {useState} from "react";
 const AddToFeed = ({username, image, title, info}) => {
+    const [follow,setFollow] =useState(false)
 
     return (
         <div className={"personal__information"}>
@@ -11,7 +13,15 @@ const AddToFeed = ({username, image, title, info}) => {
                 <h3>{username}</h3>
                 <p>{title}</p>
                 <p>{info}</p>
-                <button className={"follow__button"}><AddIcon/> Follow</button>
+                <div>
+                    <button className={"follow__button"} onClick={()=>{
+                        setFollow(!follow)
+                    }}>
+                        <AddIcon/>
+                        {follow?"Followed":"Follow"}
+                    </button>
+                </div>
+
             </div>
 
 

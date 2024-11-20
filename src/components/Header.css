@@ -1,11 +1,12 @@
 .header{
     display: flex;
     position: sticky;
-    background-color: white;
+    top: 0;
     padding: 10px;
     justify-content: space-evenly;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 3px;
+    background-color: whitesmoke;
 }
 .bottom__navigation{
     display: none;

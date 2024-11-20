@@ -18,7 +18,11 @@
     border: 1px solid black;
 
 }
-.body__section__input__bar{
+form{
+    width: 100%;
+    display: flex;
+}
+form .body__section__input__bar{
     background:none;
     outline: none;
     border: 1px solid rgb(0,0,0);
@@ -26,7 +30,25 @@
     color: rgb(0,0,0);
     border-radius: 15px;
     margin-left:10px ;
-    width: 98%;
+    width: 80%;
+}
+.submit__button{
+    display: flex;
+    color: #ffffff;
+    margin-left: 5px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    align-items: center;
+    transition: background-color 0.15ms;
+    font-weight: 900;
+    font-kerning: auto;
+
+}
+.submit__button:hover{
+    cursor: pointer;
+    background-color: rgb(0, 0, 0,0.5);
 }
 .body__section__media{
     display: flex;
@@ -42,5 +64,7 @@
     margin-top: 10px;
     background-color: white;
     border-radius: 10px;
+    height: 80vh;
+    overflow: scroll;
 
 }

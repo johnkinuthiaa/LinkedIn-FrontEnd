@@ -20,14 +20,15 @@
     display: flex;
     align-items: center;
     padding: 2px 5px 2px 5px;
-    margin-top: 5px;
+    margin: 10px;
     transition: background-color 1.15ms;
     font-weight: 900;
 }
 .follow__button:hover{
     background-color: whitesmoke;
-
+    cursor: pointer;
 }
+
 .user__info p{
     font-size: 15px;
 }
