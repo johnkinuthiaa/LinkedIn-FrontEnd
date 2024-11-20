@@ -1,15 +1,14 @@
 .posts__section{
-
     display: flex;
     flex-direction: column;
     background-color: whitesmoke;
     border-radius: 10px;
+
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
 
 }
 .posts__section__profile__info{
     display: flex;
-    position: relative;
     align-items: flex-start;
     color: #ffffff;
 
@@ -50,6 +49,13 @@
 }
 .posts__section__actual__content{
     margin: 10px;
+}
+.posts__section__actual__content .image__container img{
+    object-fit: contain;
+    height: 30%;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 

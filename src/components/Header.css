@@ -69,7 +69,8 @@ input[type="search"]{
         display: none;
     }
     .header__left img{
-        display: none;
+        height: 20px;
+        width: 30px;
     }
     .header__search{
         margin: 0;
@@ -86,7 +87,9 @@ input[type="search"]{
         bottom: 0;
         justify-content: space-between;
         width: 100%;
-        margin: 10px;
+        background-color: white;
+        padding: 10px;
+        border-top: 1px solid rgb(219, 211, 211);
 
     }
     .me{

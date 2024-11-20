@@ -18,14 +18,14 @@ const Posts =()=>{
     return(
         <div className={"posts__section"}>
             {posts.map((post)=>{
-                let {id,content,postTo,image,createdOn} =post
-                if(!image){
-                    image ="https://i.pinimg.com/236x/67/92/3e/67923e158f13c5cd30a90479a50642f7.jpg"
+                let {id,content,postTo,image,createdOn,header} =post
+                if(!header){
+                    header ="https://i.pinimg.com/236x/67/92/3e/67923e158f13c5cd30a90479a50642f7.jpg"
                 }
                 return (
                     <div className={"posts__section__all_divs"}>
                         <div className={"posts__section__profile__info"}>
-                            <img src={image}/>
+                            <img src={header} alt={"image"}/>
                             <div className={"posts__section__profile__info__details"}>
                                 <h4>{"name"}<span
                                     className={"posts__section__profile__info__details__span"}> .3rd+</span></h4>
@@ -39,6 +39,9 @@ const Posts =()=>{
 
                         </div>
                         <div className={"posts__section__actual__content"}>
+                            <div className={"image__container"}>
+                                {image&&<img src={image}/>}
+                            </div>
                             <p>{content}</p>
                         </div>
                     </div>

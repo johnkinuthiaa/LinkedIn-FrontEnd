@@ -1,10 +1,15 @@
 
 import "./AddToFeed.css"
-import AddIcon from "@mui/icons-material/Add";
-import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+
+import AlertTitle from '@mui/material/AlertTitle';
+
 import {useState} from "react";
+import AddIcon from "@mui/icons-material/Add";
+import {Alert} from "@mui/material";
+
 const AddToFeed = ({username, image, title, info}) => {
     const [follow,setFollow] =useState(false)
+
 
     return (
         <div className={"personal__information"}>
