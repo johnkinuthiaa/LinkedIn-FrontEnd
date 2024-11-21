@@ -17,9 +17,10 @@ const Profile =()=>{
     const [profilePhoto,setProfilePhoto] =useState("")
     const [school,setSchool] =useState("")
 
-    // useEffect(()=>{
-    //     fetchProfileInfo()
-    // },[])
+    useEffect(()=>{
+        fetchProfileInfo()
+    },[])
+
     const fetchProfileInfo =(async ()=>{
         const response =await fetch("http://localhost:8080/api/v1/auth/get-profile?userId=1")
         if(response.ok){
