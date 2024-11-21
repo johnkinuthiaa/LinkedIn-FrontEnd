@@ -1,0 +1,19 @@
+.errorImage__container{
+    margin: 0 auto;
+    width: 100%;
+    /*align-items: center;*/
+    display: flex;
+    background-color: rgb(242, 242, 242);
+}
+.errorImage__container img{
+    width: 100%;
+    object-fit: contain;
+    height: 500px;
+    margin: 0 auto;
+}
+
+
+
+
+
+

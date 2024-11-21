@@ -1,11 +1,11 @@
-import "./BodySection.css"
+import "./styles/BodySection.css"
 import IconsHolder from "./IconsHolder.jsx";
 import ImageIcon from '@mui/icons-material/Image';
 import SlideshowIcon from '@mui/icons-material/Slideshow';
 import ArticleIcon from '@mui/icons-material/Article';
 import Posts from "./Posts.jsx";
 import {useState} from "react";
-import header from "./Header.jsx";
+
 
 
 const BodySection =()=>{
@@ -25,12 +25,15 @@ const BodySection =()=>{
             },
 
         )
-        if(!response.ok){
-            alert(response.json())
+        if(response.ok){
+            const data =await response.json()
+            alert(data.message)
+            if(data.statusCode ===405){
+                alert("cannot create an empty post")
+            }
+        }else{
+            alert("we're having some issues with the server!please try again later")
         }
-        const data =await response.json()
-        console.log(data)
-        alert(data.message)
     })
 
     return(
@@ -64,7 +67,6 @@ const BodySection =()=>{
             </div>
             <div className={"posts"}>
                 <Posts />
-                jooooeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
             </div>
 
         </div>

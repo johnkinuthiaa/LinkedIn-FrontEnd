@@ -1,7 +1,7 @@
 import PersonAddAltIcon from '@mui/icons-material/PersonAddAlt';
 import BookmarkIcon from '@mui/icons-material/Bookmark';
 import AddIcon from '@mui/icons-material/Add';
-import "./sidebar.css"
+import "./styles/sidebar.css"
 
 const Sidebar =()=>{
     const name ="john"

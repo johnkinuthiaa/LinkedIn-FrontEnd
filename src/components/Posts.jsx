@@ -1,9 +1,11 @@
-import "./Posts.css"
+import "./styles/Posts.css"
 
 import PublicIcon from '@mui/icons-material/Public';
 import {useEffect, useState} from "react";
 const Posts =()=>{
     const [posts,setPosts] =useState([])
+    const newerPosts = [...posts]?.reverse()
+
     useEffect(()=>{
         fetchPosts()
     },[])
@@ -17,12 +19,13 @@ const Posts =()=>{
     })
     return(
         <div className={"posts__section"}>
-            {posts.map((post)=>{
+            {newerPosts.map((post)=>{
                 let {id,content,postTo,image,createdOn,header} =post
                 if(!header){
                     header ="https://i.pinimg.com/236x/67/92/3e/67923e158f13c5cd30a90479a50642f7.jpg"
                 }
                 return (
+                    // eslint-disable-next-line react/jsx-key
                     <div className={"posts__section__all_divs"}>
                         <div className={"posts__section__profile__info"}>
                             <img src={header} alt={"image"}/>

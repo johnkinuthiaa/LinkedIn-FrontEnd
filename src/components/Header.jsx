@@ -1,5 +1,5 @@
 import SearchIcon from '@mui/icons-material/Search';
-import "./Header.css"
+import "./styles/Header.css"
 import IconsHolder from "./IconsHolder.jsx";
 import HomeIcon from '@mui/icons-material/Home';
 import SupervisorAccountIcon from '@mui/icons-material/SupervisorAccount';
@@ -8,8 +8,17 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import ChatIcon from '@mui/icons-material/Chat';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import {Link, Route, useNavigate} from "react-router-dom";
+import Body from "./Body.jsx";
+import MyNetwork from "../pages/MyNetwork.jsx";
+import Jobs from "../pages/Jobs.jsx";
+import Messaging from "../pages/Messaging.jsx";
+import Notifications from "../pages/Notifications.jsx";
+import Profile from "../pages/Profile.jsx";
+import ErrorPage from "../pages/ErrorPage.jsx";
 
 const Header =()=>{
+    const navigate =useNavigate()
     return(
         <div className={"header"}>
             <div className={"header__left"}>
@@ -20,27 +29,28 @@ const Header =()=>{
 
                 </div>
                 <div className={"mobile__top__navigation"}>
-                    <ChatIcon/>
+                    <Link to={"/messaging"}><IconsHolder Icon={ChatIcon} title={"Messaging"}/></Link>
                 </div>
             </div>
             <div className={"header__right"}>
-                <IconsHolder Icon={HomeIcon} title={"Home"}/>
-                <IconsHolder Icon={SupervisorAccountIcon} title={"My Network"}/>
-                <IconsHolder Icon={BusinessCenterIcon} title={"Jobs"}/>
-                <IconsHolder Icon={ChatIcon} title={"Messaging"}/>
-                <IconsHolder Icon={NotificationsIcon} title={"Notifications"}/>
-                <IconsHolder Icon={AccountCircleIcon} title={"me"}/>
+                <Link to={"/home"}><IconsHolder Icon={HomeIcon} title={"Home"}/></Link>
+                <Link to={"/myNetwork"}> <IconsHolder Icon={SupervisorAccountIcon} title={"My Network"}/> </Link>
+                <Link to={"/jobs"}><IconsHolder Icon={BusinessCenterIcon} title={"Jobs"}/></Link>
+                <Link to={"/messaging"}><IconsHolder Icon={ChatIcon} title={"Messaging"}/></Link>
+                <Link to={"/notifications"}><IconsHolder Icon={NotificationsIcon} title={"Notifications"}/></Link>
+                <Link to={"/profile"}><IconsHolder Icon={AccountCircleIcon} title={"me"}/></Link>
+
                 <div className={"header__right__menu"}>
                     <IconsHolder Icon={AppsIcon} title={"For Businesses"}/>
                 </div>
             </div>
             <div className={"bottom__navigation"}>
-                <IconsHolder Icon={HomeIcon} title={"Home"}/>
-                <IconsHolder Icon={SupervisorAccountIcon} title={"My Network"}/>
-                <IconsHolder Icon={BusinessCenterIcon} title={"Jobs"}/>
-                <IconsHolder Icon={ChatIcon} title={"Messaging"}/>
-                <IconsHolder Icon={NotificationsIcon} title={"Notifications"}/>
-                <IconsHolder Icon={AccountCircleIcon} title={"me"}/>
+                <Link to={"/home"}><IconsHolder Icon={HomeIcon} title={"Home"}/></Link>
+                <Link to={"/myNetwork"}> <IconsHolder Icon={SupervisorAccountIcon} title={"My Network"}/> </Link>
+                <Link to={"/jobs"}><IconsHolder Icon={BusinessCenterIcon} title={"Jobs"}/></Link>
+                <Link to={"/messaging"}><IconsHolder Icon={ChatIcon} title={"Messaging"}/></Link>
+                <Link to={"/notifications"}><IconsHolder Icon={NotificationsIcon} title={"Notifications"}/></Link>
+                <Link to={"/profile"}><IconsHolder Icon={AccountCircleIcon} title={"me"}/></Link>
                 <div className={"header__right__menu"}>
                     <IconsHolder Icon={AppsIcon} title={"For Businesses"}/>
                 </div>

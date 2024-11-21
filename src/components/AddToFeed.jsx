@@ -1,5 +1,5 @@
 
-import "./AddToFeed.css"
+import "./styles/AddToFeed.css"
 
 import AlertTitle from '@mui/material/AlertTitle';
 

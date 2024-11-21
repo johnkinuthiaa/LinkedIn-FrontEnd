@@ -1,4 +1,4 @@
-import "./Body.css"
+import "./styles/Body.css"
 import Sidebar from "./Sidebar.jsx";
 import BodySection from "./BodySection.jsx";
 import RightBar from "./RIghtBar.jsx";

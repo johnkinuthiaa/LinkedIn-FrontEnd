@@ -1,6 +1,6 @@
 
 
-import "./IconHolder.css"
+import "./styles/IconHolder.css"
 const IconsHolder =({Icon, title})=>{
     return(
         <div className={"icon__holders"}>

@@ -1,4 +1,4 @@
-import "./RightBar.css"
+import "./styles/RightBar.css"
 import InfoIcon from '@mui/icons-material/Info';
 import AddToFeed from "./AddToFeed.jsx";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
