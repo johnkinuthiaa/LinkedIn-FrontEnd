@@ -15,6 +15,7 @@ function App() {
   return (
       <Routes>
           <Route path="/home" element={<Body/>}/>
+          <Route path="/" element={<Body/>}/>
           <Route path={"/myNetwork"} element={<MyNetwork/>}/>
           <Route path="/jobs" element={<Jobs/>}/>
           <Route path="/messaging" element={<Messaging/>}/>
