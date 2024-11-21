@@ -45,7 +45,7 @@ const Profile =()=>{
                 <div className={"profile__container__profile__details__section"}>
                     <div className={"profile__container__profile__details__section__banner"}>
                         <img alt={"banner image"}
-                             src={bannerImage}
+                             src={bannerImage?(bannerImage):("https://i.pinimg.com/control2/236x/bd/a2/67/bda2671c3b78f9ba9f0264f59782e1cc.jpg")}
                              className={"banner__img"}/>
                         <div className={"profile__container__profile__details__section__banner__camera"}>
                             <CameraAltIcon/>
@@ -55,7 +55,7 @@ const Profile =()=>{
                         <div className={"profile__container__profile__details__section__image"}>
                             <div className={"okay__fixed__it"}>
                                 <img alt={"profile image"}
-                                     src={profilePhoto}/>
+                                     src={profilePhoto?(profilePhoto):("https://i.pinimg.com/474x/50/cb/53/50cb5340abd92bc3a3d33d6a54fa1aef.jpg")}/>
                                 <AddIcon className={"icon"}/>
                             </div>
 
@@ -68,7 +68,7 @@ const Profile =()=>{
                     </div>
                     <div className={"profile__information__container"}>
                         <div className={"profile__container__profile__details__section__badge"}>
-                            <h2>{username}</h2>
+                            <h2>{username?(username):("JohnDoe")}</h2>
                             <div className={"get__verification"}>
                                 <GppGoodIcon/>
                                 <h4>Add verification badge</h4>
