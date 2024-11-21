@@ -1,7 +1,9 @@
 .right__bar__mini_heading{
     display: flex;
     justify-content: space-between;
-
+}
+.right__bar__mini_heading h3{
+    margin-bottom: 5px;
 }
 .right__bar{
     display: flex;

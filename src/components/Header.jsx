@@ -27,7 +27,7 @@ const Header =()=>{
                 </div>
             </div>
             <div className={"header__right"}>
-                <Link to={"/home"}><IconsHolder Icon={HomeIcon} title={"Home"}/></Link>
+                <Link to={"/home"} ><IconsHolder Icon={HomeIcon} title={"Home"}/></Link>
                 <Link to={"/myNetwork"}> <IconsHolder Icon={SupervisorAccountIcon} title={"My Network"}/> </Link>
                 <Link to={"/jobs"}><IconsHolder Icon={BusinessCenterIcon} title={"Jobs"}/></Link>
                 <Link to={"/messaging"}><IconsHolder Icon={ChatIcon} title={"Messaging"}/></Link>
