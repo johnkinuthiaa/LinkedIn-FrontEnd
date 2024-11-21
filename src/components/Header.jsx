@@ -9,20 +9,14 @@ import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import ChatIcon from '@mui/icons-material/Chat';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import {Link, Route, useNavigate} from "react-router-dom";
-import Body from "./Body.jsx";
-import MyNetwork from "../pages/MyNetwork.jsx";
-import Jobs from "../pages/Jobs.jsx";
-import Messaging from "../pages/Messaging.jsx";
-import Notifications from "../pages/Notifications.jsx";
-import Profile from "../pages/Profile.jsx";
-import ErrorPage from "../pages/ErrorPage.jsx";
+
 
 const Header =()=>{
     const navigate =useNavigate()
     return(
         <div className={"header"}>
             <div className={"header__left"}>
-                <img src={"https://i.pinimg.com/236x/32/db/d3/32dbd38843d4e565744c95bfdf47f56d.jpg"} alt={"profile"}/>
+                <Link to={"/"}><img src={"https://i.pinimg.com/236x/32/db/d3/32dbd38843d4e565744c95bfdf47f56d.jpg"} alt={"profile"}/></Link>
                 <div className={"header__search"}>
                     <SearchIcon className={"search__icon"}/>
                     <input type={"search"} placeholder={"search"}/>

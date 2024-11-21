@@ -65,6 +65,7 @@ form .body__section__input__bar{
     background-color: white;
     border-radius: 10px;
     height: 80vh;
-    overflow: scroll;
+    /*overflow: scroll;*/
+    scroll-behavior: smooth;
 
 }
