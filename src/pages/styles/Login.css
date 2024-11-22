@@ -1,0 +1,106 @@
+.login__form{
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto ;
+    width: 400px;
+    align-items: center;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+}
+.password{
+    width: 110%;
+}
+.login__form>*{
+    margin-top: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+label{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+form input{
+    padding: 10px;
+    border-radius: 5px;
+    border:2px solid gray;
+    outline: none;
+    cursor: pointer;
+    background-color: white;
+}
+input:hover{
+    border: 2px solid black;
+}
+input:focus{
+    cursor: text;
+}
+input:active{
+    background-color: white;
+}
+.keep__logged{
+    display: flex;
+    font-weight: 400;
+    font-size: 14px;
+}
+.keep__logged p{
+    margin-left: 4px;
+}
+.policies{
+    font-weight: 300;
+    font-size: 14px;
+    color: gray;
+
+}
+.policies>*{
+    margin-top: 10px;
+}
+.policies__agreement{
+    color: rgb(47, 88, 205);
+}
+.see__pass{
+    border: none;
+    outline: none;
+}
+.agree__and__continue__btn{
+    background-color: rgb(47, 88, 205);
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 15px;
+    width: 100%;
+    align-items: center;
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 16px;
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+.agree__and__continue__btn:hover{
+    cursor: pointer;
+}
+.login__link{
+    color: rgb(75, 112, 245);
+    cursor: pointer;
+}
+.password{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.username{
+    width: 100%;
+}
+.password__input{
+    width: 100%;
+}
+.show__password{
+    margin-left: -25px;
+    cursor: pointer;
+
+}
+.to__login{
+    margin-bottom: 10px;
+}

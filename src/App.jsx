@@ -9,20 +9,26 @@ import Jobs from "./pages/Jobs.jsx";
 import Messaging from "./pages/Messaging.jsx";
 import Notifications from "./pages/Notifications.jsx";
 import Profile from "./pages/Profile.jsx";
+import Login from "./pages/Login.jsx";
+import SignUp from "./pages/SignUp.jsx";
+import Header from "./components/Header.jsx";
 
 
 function App() {
   return (
-      <Routes>
-          <Route path="/home" element={<Body/>}/>
-          <Route path="/" element={<Body/>}/>
-          <Route path={"/myNetwork"} element={<MyNetwork/>}/>
-          <Route path="/jobs" element={<Jobs/>}/>
-          <Route path="/messaging" element={<Messaging/>}/>
-          <Route path="/notifications" element={<Notifications />}/>
-          <Route path={"/profile"} element={<Profile />}></Route>
-          <Route path={"*"} element={ <ErrorPage/>}></Route>
-      </Routes>
+      <>
+          <Routes>
+              <Route path="/home" element={<Body/>}/>
+              <Route path="/" element={<Login/>}/>
+              <Route path="/register" element={<SignUp/>}/>
+              <Route path={"/myNetwork"} element={<MyNetwork/>}/>
+              <Route path="/jobs" element={<Jobs/>}/>
+              <Route path="/messaging" element={<Messaging/>}/>
+              <Route path="/notifications" element={<Notifications />}/>
+              <Route path={"/profile"} element={<Profile />}></Route>
+              <Route path={"*"} element={ <ErrorPage/>}></Route>
+          </Routes>
+      </>
 
         //   <Body />
   )

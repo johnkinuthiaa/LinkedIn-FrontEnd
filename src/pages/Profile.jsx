@@ -3,10 +3,11 @@ import CameraAltIcon from '@mui/icons-material/CameraAlt';
 import AddIcon from '@mui/icons-material/Add';
 import GppGoodIcon from '@mui/icons-material/GppGood';
 import CreateIcon from '@mui/icons-material/Create';
-import VisibilityIcon from '@mui/icons-material/Visibility';
-import GroupIcon from '@mui/icons-material/Group';
-import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
-import BarChartIcon from '@mui/icons-material/BarChart';
+// import VisibilityIcon from '@mui/icons-material/Visibility';
+// import GroupIcon from '@mui/icons-material/Group';
+// import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+// import BarChartIcon from '@mui/icons-material/BarChart';
+
 import {useEffect, useState} from "react";
 
 const Profile =()=>{
@@ -127,79 +128,79 @@ const Profile =()=>{
                     </div>
                 </div>
             </div>
-            <div>
-                <div className={"suggested__for__you"}>
-                    <h2>Suggested for you</h2>
-                    <div className={"private"}>
-                        <VisibilityIcon/><p>private to you</p>
-                    </div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <div className={"analytics"}>
-                    <h2>Analytics</h2>
-                    <div className={"private"}>
-                        <VisibilityIcon/><p>private to you</p>
-                    </div>
-                    <div className={"profile__views"}>
-                        <div>
-                            <GroupIcon/>
-                        </div>
-                        <div className={"profile__views__text"}>
-                            <h3>0 profile views</h3>
-                            <p>Update your profile to extract viewers</p>
-                        </div>
+            {/*<div>*/}
+            {/*    <div className={"suggested__for__you"}>*/}
+            {/*        <h2>Suggested for you</h2>*/}
+            {/*        <div className={"private"}>*/}
+            {/*            <VisibilityIcon/><p>private to you</p>*/}
+            {/*        </div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*    </div>*/}
+            {/*    <div className={"analytics"}>*/}
+            {/*        <h2>Analytics</h2>*/}
+            {/*        <div className={"private"}>*/}
+            {/*            <VisibilityIcon/><p>private to you</p>*/}
+            {/*        </div>*/}
+            {/*        <div className={"profile__views"}>*/}
+            {/*            <div>*/}
+            {/*                <GroupIcon/>*/}
+            {/*            </div>*/}
+            {/*            <div className={"profile__views__text"}>*/}
+            {/*                <h3>0 profile views</h3>*/}
+            {/*                <p>Update your profile to extract viewers</p>*/}
+            {/*            </div>*/}
 
-                    </div>
-                    <div className={"post__impressions"}>
-                        <div>
-                            <BarChartIcon/>
-                        </div>
-                        <div className={"profile__views__text"}>
-                            <h3>0 post impressions</h3>
-                            <p>Start a post to increase engagements</p>
-                            <p>past 7 days</p>
-                        </div>
-                    </div>
-                    <div className={"show__all__analytics"}>
-                        <h3>Show all analytics </h3>
-                        <ArrowRightAltIcon/>
-                    </div>
-                </div>
-                <div className={"activity"}>
-                    <h3>Activity</h3>
-                    <p>{0} followers</p>
-                    <h3>{0} posts</h3>
-                    <p> posts shared appear here</p>
-                    <div className={"show__all__analytics"}>
-                        <h3>Show all activities <ArrowRightAltIcon/></h3>
-                    </div>
+            {/*        </div>*/}
+            {/*        <div className={"post__impressions"}>*/}
+            {/*            <div>*/}
+            {/*                <BarChartIcon/>*/}
+            {/*            </div>*/}
+            {/*            <div className={"profile__views__text"}>*/}
+            {/*                <h3>0 post impressions</h3>*/}
+            {/*                <p>Start a post to increase engagements</p>*/}
+            {/*                <p>past 7 days</p>*/}
+            {/*            </div>*/}
+            {/*        </div>*/}
+            {/*        <div className={"show__all__analytics"}>*/}
+            {/*            <h3>Show all analytics </h3>*/}
+            {/*            <ArrowRightAltIcon/>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*    <div className={"activity"}>*/}
+            {/*        <h3>Activity</h3>*/}
+            {/*        <p>{0} followers</p>*/}
+            {/*        <h3>{0} posts</h3>*/}
+            {/*        <p> posts shared appear here</p>*/}
+            {/*        <div className={"show__all__analytics"}>*/}
+            {/*            <h3>Show all activities <ArrowRightAltIcon/></h3>*/}
+            {/*        </div>*/}
 
-                </div>
-                <div className={"suggested__for__you"}>
-                    <h3>Experience</h3>
-                    <p>ShowCase your experience and get upto 2x as many profile views and connections</p>
-                    <div className={"school"}></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <div className={"suggested__for__you"}>
-                    <h3>Experience</h3>
-                    <p>ShowCase your experience and get upto 2x as many profile views and connections</p>
-                    <div className={"school"}></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <div className={"suggested__for__you"}>
-                    <h3>Experience</h3>
-                    <p>ShowCase your experience and get upto 2x as many profile views and connections</p>
-                    <div className={"school"}></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <div className={"suggested__for__you"}></div>
-                <div className={"suggested__for__you"}></div>
-            </div>
+            {/*    </div>*/}
+            {/*    <div className={"suggested__for__you"}>*/}
+            {/*        <h3>Experience</h3>*/}
+            {/*        <p>ShowCase your experience and get upto 2x as many profile views and connections</p>*/}
+            {/*        <div className={"school"}></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*    </div>*/}
+            {/*    <div className={"suggested__for__you"}>*/}
+            {/*        <h3>Experience</h3>*/}
+            {/*        <p>ShowCase your experience and get upto 2x as many profile views and connections</p>*/}
+            {/*        <div className={"school"}></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*    </div>*/}
+            {/*    <div className={"suggested__for__you"}>*/}
+            {/*        <h3>Experience</h3>*/}
+            {/*        <p>ShowCase your experience and get upto 2x as many profile views and connections</p>*/}
+            {/*        <div className={"school"}></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*    </div>*/}
+            {/*    <div className={"suggested__for__you"}></div>*/}
+            {/*    <div className={"suggested__for__you"}></div>*/}
+            {/*</div>*/}
         </div>
     )
 }
