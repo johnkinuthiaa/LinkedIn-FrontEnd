@@ -7,11 +7,16 @@ import {useState} from "react";
 import AddIcon from "@mui/icons-material/Add";
 import {Alert} from "@mui/material";
 
-const AddToFeed = ({username, image, title, info}) => {
+const AddToFeed = (userList) => {
     const [follow,setFollow] =useState(false)
 
+    const[username,setUsername] =useState("")
+    const[title,setTitle] =useState("")
+    const[image,setImage] =useState("")
+    const[info,setInfo] =useState("")
 
     return (
+        <div>
         <div className={"personal__information"}>
             <img alt={"users__to__add"} src={image}/>
             <div className={"user__info"}>
@@ -31,7 +36,9 @@ const AddToFeed = ({username, image, title, info}) => {
 
 
         </div>
+        </div>
     )
+
 }
 
 export default AddToFeed;

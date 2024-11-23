@@ -4,12 +4,16 @@ import {Link, useNavigate} from "react-router-dom";
 import {useState} from "react";
 const Login =()=>{
     const BASEURL ="http://localhost:8080/api/v1/auth"
-    const savedName =JSON.parse(localStorage.getItem("connectedUser"))
 
+    const savedName =JSON.parse(localStorage.getItem("connectedUser"))
     const [username,setUsername] =useState("")
     const [password,setPassword] =useState("")
     const [email,setEmail] =useState("")
     const navigate =useNavigate()
+
+    if(savedName){
+        navigate("/home")
+    }
     const login =(async ()=>{
         const myHeaders =new Headers();
         myHeaders.append("Content-Type","application/json")
@@ -27,6 +31,7 @@ const Login =()=>{
             const data =await resonse.json()
             alert(data.message)
             localStorage.setItem("jwtToken",data.jwtToken)
+            localStorage.setItem("loggedInUser",JSON.stringify(data.user))
             navigate("/home")
         }
 

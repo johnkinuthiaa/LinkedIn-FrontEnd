@@ -3,12 +3,26 @@ import InfoIcon from '@mui/icons-material/Info';
 import AddToFeed from "./AddToFeed.jsx";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import Footer from "./Footer.jsx";
+import {useEffect, useState} from "react";
 
 const RightBar =()=>{
-    const username ="john";
-    const title ="software engineer ehrfdbvdjhgurh "
-    const image ="https://i.pinimg.com/236x/6e/c4/0f/6ec40fda89689b7cf397e928fbc00077.jpg"
-    const info="a fullstack junior dev"
+    useEffect(()=>{
+        fetchUsers()
+    },[])
+    const[usersList,setUsersList]=useState([])
+
+    const fetchUsers =(async ()=>{
+        const response =await fetch("http://localhost:8080/api/v1/auth/all")
+        if(response.ok){
+            const data =await response.json()
+            setUsersList(data.users)
+
+
+        }else{
+            alert("no data")
+        }
+    })
+
     return(
         <>
             <div className={"right__bar"}>
@@ -17,9 +31,7 @@ const RightBar =()=>{
                     <InfoIcon/>
                 </div>
                 <div className={"users__to__add"}>
-                    <AddToFeed username={username} title={title} image={image} info={info}/>
-                    <AddToFeed username={username} title={title} image={image} info={info}/>
-                    <AddToFeed username={username} title={title} image={image} info={info}/>
+                    <AddToFeed data={usersList}/>
                     <div className={"all__recommendations"}>
                         <h4>View all recommendations</h4>
                         <ArrowRightAltIcon/>

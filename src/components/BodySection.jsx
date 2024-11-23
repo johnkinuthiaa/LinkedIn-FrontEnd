@@ -11,13 +11,17 @@ import {useState} from "react";
 const BodySection =()=>{
     const [postDetails,setPostDetails]=useState("")
     const BASEURL ="http://localhost:8080/api/v1/posts"
+
+    const user =JSON.parse(localStorage.getItem("loggedInUser"))
+    const userId =user.id
+
     const sendPostToDb =(async (content)=>{
         const myHeaders =new Headers()
         myHeaders.append("Content-Type","application/json")
         const response =await fetch(`${BASEURL}/create/post`,
             {method:"POST",
                 body:JSON.stringify({
-                        userId:1,
+                        userId:`${userId}`,
                         content:`${content}`,
                         postTo:"EVERYONE"
                 }),
@@ -46,7 +50,7 @@ const BodySection =()=>{
                     <form onSubmit={(e)=>{
                         e.preventDefault();
                     }}>
-                        <input type={"submit "} placeholder={"Start a post, try writing with ai"}
+                        <input type={"text"} placeholder={"Start a post, try writing with ai"}
                                className={"body__section__input__bar"} onChange={(e)=>{
                                    setPostDetails(e.target.value)
                         }}/>

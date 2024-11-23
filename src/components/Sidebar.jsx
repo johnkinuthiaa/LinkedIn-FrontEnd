@@ -4,7 +4,8 @@ import AddIcon from '@mui/icons-material/Add';
 import "./styles/sidebar.css"
 
 const Sidebar =()=>{
-    const name ="john"
+    const fetchName =JSON.parse(localStorage.getItem("loggedInUser"))
+    const name =fetchName.username
     return(
         <div className={"left__sidebar"}>
             <div className={"top__left"}>
